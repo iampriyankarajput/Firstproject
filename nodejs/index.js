@@ -7,6 +7,7 @@ var server = app.listen(3000,listening);
 function listening(){
     console.log("listening.. at 3000");
 }
+
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/nodejs',{useNewUrlParser: true},(err)=>{
     if(!err){console.log('mongodb connection succeeded.')}
