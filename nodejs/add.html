@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<form name="myForm"  onsubmit="return validateForm()" method="post">
+
+
+  <table align="center" cellpadding = "10">
+ 
+      
+      <tr>
+      <td>FIRST NAME</td>
+      <td><input type="text" name="fname" >
+      </td>
+      </tr>
+       
+
+      <tr>
+      <td>LAST NAME</td>
+      <td><input type="text" name="lname" >
+      
+      </td>
+      </tr>
+
+      <tr>
+      <td>EMAIL ID</td>
+      <td><input type="text" name="Email_Id" maxlength="100" /></td>
+      </tr>
+
+       <tr>
+          <td>PASSWORD</td>
+          <td><input type="text" name="password" maxlength="100" /></td>
+          </tr>
+         
+     
+      
+      <tr>
+      <td>MOBILE NUMBER</td>
+      <td>
+      <input type="number" name="Mobile_Number" >
+      </td>
+      </tr>
+     
+      <tr>
+      <td>GENDER</td>
+      <td>
+      Male <input type="radio" name="Gender" value="Male" />
+      Female <input type="radio" name="Gender" value="Female" />
+      </td>
+      </tr>
+     
+      <tr>
+      <td>ADDRESS <br /><br /><br /></td>
+      <td><textarea name="Address" rows="4" cols="30"></textarea></td>
+      </tr>
+
+      <tr>
+      <td colspan="2" align="center">
+      <button type="submit"  value="Submit">Submit</button>
+      </td>
+      </tr>
+</table>
+
+
+
+</form>
+<script>
+    function validateForm() {
+      var fname = document.forms["myForm"]["fname"];
+      var lname = document.forms["myForm"]["lname"];
+      var Email_Id = document.forms["myForm"]["Email_Id"];
+      var Mobile_Number = document.forms["myForm"]["Mobile_Number"];
+      var Gender = document.forms["myForm"]["Gender"];
+      var password = document.forms["myForm"]["password"];
+      var Address = document.forms["myForm"]["Address"];
+
+
+      if (fname.value == "")                                  
+    { 
+        window.alert("Please enter your first name."); 
+        name.focus(); 
+        return false; 
+
+    } 
+      if (lname.value == "")                                  
+    { 
+        window.alert("Please enter your last name."); 
+        name.focus(); 
+        return false; 
+    } 
+       
+    if (Email_Id.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (Email_Id.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (Email_Id.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (Mobile_Number.value == "")                           
+    { 
+        window.alert("Please enter your mobile number."); 
+        phone.focus(); 
+        return false; 
+    } 
+    
+    if (Gender.value == "")                           
+    { 
+        window.alert("Please select your gender."); 
+        phone.focus(); 
+        return false; 
+    } 
+   
+    if (password.value == "")                        
+    { 
+        window.alert("Please enter your password"); 
+        password.focus(); 
+        return false; 
+    } 
+    
+    if (Address.value == "")                               
+    { 
+        window.alert("Please enter your address."); 
+        name.focus(); 
+        return false; 
+    } 
+  
+    return true;
+
+    }
+    </script>
+</body>
+</html>
+

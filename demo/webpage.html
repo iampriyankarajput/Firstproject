@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .body {
+  /* The image used */
+  background-image: url("img.jpg");
+  width: 100%;
+  min-height: 580px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: orangered;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 35px;
+  text-decoration: none;
+}
+
+img {
+ 
+padding: 15px 14px; 
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  left: 50px;
+  margin: 20px;
+  max-width: 600px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 2px 0 12px 0;
+  border: 0;
+  background: #f1f1f1;
+}
+
+/*input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}*/
+
+select{
+  padding: 20px;
+  margin: 2px 0 10px 0;
+}
+input[type=number]{
+  padding: 15px;
+  margin: 2px 0 10px 0;
+  
+}
+
+
+
+/* Set a style for the submit button */
+.btn {
+  background-color: tomato;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 36px 38px;
+  text-decoration: none;
+}
+li b {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 36px 38px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: black;
+}
+
+.active {
+  background-color: lightgray;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li style="float:right"><a class="active" href="#Mortgage">Mortgage</a></li>
+  <li style="float:right"><b class="active" href="#visa">Visa and Immigation</b></li>
+  <li style="float:right"><a class="active" href="#Contact">Contact us</a></li>
+  <li style="float:right"><a class="active" href="#about">About us</a></li>
+  <li style="float:right"><b class="active" href="#Find">Find a home</b></li>
+</ul>
+
+
+<div class="body">
+ 
+  <form action="/action_page.php" class="container">
+    <h3><font color="red">Search by filter</h3>
+    <input type="text" placeholder="Enter an address or zip code" name="code" required>
+    
+
+    <select style="margin:15px;">
+  <option value="select status">select status</option>
+  <option value="UNDER CONSTRUCTION">UNDER CONSTRUCTION</option>
+  <option value="OFF PLAN">OFF PLAN</option>
+  <option value="AVAILABLE NOW">AVAILABLE NOW</option>
+</select>
+
+
+<select style="margin:15px;">
+  <option value="select property">select property type</option>
+  <option value="Single">Single house family</option>
+  <option value="Townhouse">Townhouse</option>
+  <option value="condo">condo</option>
+</select>
+
+<select style="margin:15px;">
+  <option value="select beds">select number of beds</option>
+  <option value="1">1 Bed</option>
+  <option value="2">2 Beds</option>
+  <option value="3">3 Beds</option>
+</select>
+
+<select style="margin:15px;">
+  <option value="select bath">select number of bath</option>
+  <option value="1">1+Bath</option>
+  <option value="2">2+Bath</option>
+  <option value="3">3+Bath</option>
+</select>
+
+
+ <h3><b><font color="black">Price Range($)</h3>
+  <input type="number">
+  <input type="number" >
+
+    <button type="Search" class="btn">Search</button>
+  </form>
+</div>
+<div class="navbar">
+    <a href="#">Off-Plan</a>
+    <a href="#">under Construction</a>
+    <a href="#">Available now</a>
+    
+  </div>
+  
+  <h1><center>OFF-PLAN</center></h1>
+  <h3><center>A unique opportunity to buy property at the very earliest stage</center></h3>
+
+
+<img src="img1.jpg" height="250" width="500">
+<img src="img2.jpg" height="250" width="500">
+<img src="img3.jpg" height="250" width="500">
+<img src="img4.jpg" height="250" width="500">
+
+</body>
+</html>
